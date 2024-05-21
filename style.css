@@ -1,0 +1,37 @@
+/* Body */
+/* Reset margin and padding, beside makin the Body flex and border-box */
+
+body {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #1f2937;
+}
+
+.logo {
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+.links {
+    display: flex;
+    font-size: 18px;
+    color: #e5e7eb;
+    gap: 20px;
+}
+
+a {
+    all: unset;
+    cursor: pointer;
+}
