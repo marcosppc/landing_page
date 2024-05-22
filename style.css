@@ -141,3 +141,23 @@ button {
     text-align: center;
 }
 
+.third-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e7eb;
+    padding: 80px 300px;
+    gap: 20px;
+}
+
+.quote-main-text {
+    font-size: 36px;
+    color: #1f2937;
+}
+
+.quote-signature {
+    font-size: 18px;
+    font-weight: bold;
+    align-self: flex-end;
+}
