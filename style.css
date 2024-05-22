@@ -1,5 +1,4 @@
 /* Body */
-/* Reset margin and padding, beside makin the Body flex and border-box */
 
 body {
     display: flex;
@@ -10,18 +9,28 @@ body {
 }
 
 
+/* Hero */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    background-color: #1f2937;
+    padding: 8px 200px 100px;
+}
+
 /* Header */
 
 .header {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    background-color: #1f2937;
+    padding-bottom: 100px;
 }
 
 .logo {
     font-size: 24px;
     color: #f9faf8;
+    flex-grow: 1;
 }
 
 .links {
@@ -29,9 +38,61 @@ body {
     font-size: 18px;
     color: #e5e7eb;
     gap: 20px;
+    flex-grow: 1;
+    justify-content: flex-end;
 }
 
 a {
     all: unset;
     cursor: pointer;
+}
+
+/* First block */
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.text, .image {
+    display: flex;
+    flex-shrink: 1;
+    flex-direction: column;
+    width: 50%;
+    min-height: 200px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #e5e7eb;
+    background-color: rgb(85, 85, 85)
+}
+
+.main-text {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #f9faf8;
+    margin-bottom: 8px;
+}
+
+.secondary-text {
+    font-size: 18px;
+    color: #e5e7eb;
+    margin-bottom: 8px;
+}
+
+button {
+    background-color: #3882f6;
+    color: #f9f9f9;
+    font-size: 16px;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 8px;
+    padding: 6px 20px;
+    align-self: flex-start;
 }
